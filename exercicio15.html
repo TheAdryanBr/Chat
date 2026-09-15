@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    let salario, aumento;
+
+    salario = Number(prompt("Informe o salário: "));
+    document.write("Salário atual:", salario, "<br>");
+
+    if (salario <= 1500 ) {
+        aumento = (salario * 0.15)
+        salario = salario + (salario * 0.15);
+        document.write("Percentual aplicado: 15%", "<br>");
+    } else if (salario >= 1500.01 && salario < 3000) { 
+        aumento = (salario * 0.10)
+        salario = salario + (salario * 0.10);
+        document.write("Percentual aplicado: 10%", "<br>");
+    } else {
+        aumento = (salario * 0.5)
+        salario = salario + (salario * 0.05);
+        document.write("Percentual aplicado: 5%", "<br>");
+    }
+
+    document.write("Valor do aumento: ", aumento, "<br>");
+    document.write("Novo salário: ", salario, "<br>");
+</script>

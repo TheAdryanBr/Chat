@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+
+<script>    
+
+    let salario, aumento;
+
+    salario = Number(prompt("Salário: "));
+    aumento = Number(prompt("Porcentagem de aumento do salário de 0% a 100%: "));
+
+    document.write("Salário: ", salario, "<br>");
+
+    aumento = aumento / 100;
+
+    document.write("Novo salário:", salario + (salario * aumento));
+
+</script>
